@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="290.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.ClientesControlador">
+   <children>
+      <TableView fx:id="tableView" layoutX="13.0" layoutY="35.0" prefHeight="200.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="columnIdentificacion" prefWidth="104.0" text="Identificación" />
+          <TableColumn fx:id="columnNombre" prefWidth="120.0" text="Nombre" />
+            <TableColumn fx:id="columnCorreo" prefWidth="125.0" text="Correo" />
+            <TableColumn fx:id="columnTelefono" prefWidth="101.0" text="Telefono" />
+            <TableColumn fx:id="columnDireccion" prefWidth="129.0" text="Dirección" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAtras" layoutX="269.0" layoutY="251.0" mnemonicParsing="false" onAction="#regresarInicio" text="ATRÁS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

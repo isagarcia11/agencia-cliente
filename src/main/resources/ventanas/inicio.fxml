@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.InicioControlador">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="232.0" layoutX="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/miniLogoAgencia.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="cambiarIdioma" layoutX="637.0" layoutY="31.0" mnemonicParsing="false" onAction="#cambiarIdioma" text="CAMBIAR IDIOMA">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="iniciarSesion" layoutX="779.0" layoutY="31.0" mnemonicParsing="false" onAction="#iniciarSesion" text="INICIAR SESIÓN">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="2.0" layoutY="77.0" prefHeight="0.0" prefWidth="917.0" />
+      <Label fx:id="banner" layoutX="61.0" layoutY="102.0" text="VISITA ESTOS MARAVILLOSOS DESTINOS EN EL 2023 A PRECIOS MUY BAJOS ">
+         <font>
+            <Font name="Franklin Gothic Medium" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagen" fitHeight="244.0" fitWidth="285.0" layoutX="60.0" layoutY="204.0" />
+      <Button layoutX="203.0" layoutY="469.0" onAction="#siguienteDestino" text="Siguiente" />
+      <Button layoutX="150.0" layoutY="469.0" onAction="#destinoAnterior" text="Atrás" />
+
+      <Button fx:id="nombreDestino" layoutX="150.0" layoutY="166.0" mnemonicParsing="false" onAction="#conocerDestino" prefHeight="25.0" prefWidth="105.0" />
+      <ImageView fx:id="imagenDestino" fitHeight="244.0" fitWidth="285.0" layoutX="477.0" layoutY="211.0" />
+      <Button fx:id="btnAnteriorPaquete" layoutX="499.0" layoutY="469.0" text="Anterior Paquete" />
+      <Button fx:id="btnSiguientePaquete" layoutX="620.0" layoutY="469.0" text="Siguiente Paquete" />
+      <Button fx:id="nombrePaquete" layoutX="581.0" layoutY="166.0" mnemonicParsing="false" onAction="#conocerPaquete" prefHeight="25.0" prefWidth="113.0" />
+   </children>
+</AnchorPane>

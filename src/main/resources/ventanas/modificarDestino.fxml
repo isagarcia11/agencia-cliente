@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="437.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.ModificarDestinoControlador">
+    <children>
+        <TextField fx:id="txtNombreDestino" layoutX="38.0" layoutY="157.0" prefHeight="25.0" prefWidth="253.0" promptText="Nombre del destino" />
+        <TextField fx:id="txtCiudad" layoutX="38.0" layoutY="199.0" prefHeight="25.0" prefWidth="253.0" promptText="Ciudad" />
+        <TextField fx:id="txtDescripcion" layoutX="38.0" layoutY="238.0" prefHeight="25.0" prefWidth="253.0" promptText="Descripción" />
+        <TextField fx:id="txtImagen" layoutX="38.0" layoutY="275.0" prefHeight="25.0" prefWidth="253.0" promptText="Imagen" />
+        <ComboBox fx:id="cbxClima" layoutX="38.0" layoutY="311.0" prefHeight="25.0" prefWidth="253.0" />
+        <Button fx:id="btnActualizar" layoutX="178.0" layoutY="384.0" mnemonicParsing="false" onAction="#actualizarDestino" prefHeight="25.0" prefWidth="101.0" text="ACTUALIZAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+        <Button fx:id="btnAtras" layoutX="38.0" layoutY="384.0" mnemonicParsing="false" onAction="#regresarInicio" prefHeight="25.0" prefWidth="101.0" text="ATRÁS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnBuscar" layoutX="317.0" layoutY="157.0" mnemonicParsing="false" onAction="#setDestino" prefHeight="25.0" prefWidth="101.0" text="BUSCAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnEliminar" layoutX="317.0" layoutY="384.0" mnemonicParsing="false" onAction="#eliminarDestino" prefHeight="25.0" prefWidth="101.0" text="ELIMINAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="141.0" fitWidth="322.0" layoutX="67.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/MODIFICARDESTINO.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="-7.0" layoutY="130.0" prefHeight="9.0" prefWidth="458.0" />
+    </children>
+</AnchorPane>

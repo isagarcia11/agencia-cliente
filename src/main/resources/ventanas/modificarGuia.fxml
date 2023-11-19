@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="331.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.ModificarGuiaControlador">
+    <children>
+        <Label fx:id="nombre" layoutX="24.0" layoutY="30.0" text="Nombre:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <TextField fx:id="txtNombre" layoutX="150.0" layoutY="25.0" prefHeight="25.0" prefWidth="139.0" />
+        <Label fx:id="identificacion" layoutX="24.0" layoutY="80.0" text="Identificación:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <TextField fx:id="txtIdentificacion" layoutX="150.0" layoutY="75.0" prefHeight="25.0" prefWidth="139.0" />
+        <Label fx:id="experiencia" layoutX="22.0" layoutY="130.0" text="Experiencia:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <TextField fx:id="txtExperiencia" layoutX="150.0" layoutY="125.0" prefHeight="25.0" prefWidth="139.0" />
+        <Label fx:id="idiomasGuia" layoutX="24.0" layoutY="180.0" text="Idiomas del guía:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <ComboBox fx:id="comboIdiomasGuia" layoutX="150.0" layoutY="175.0" prefHeight="25.0" prefWidth="139.0" />
+        <Button fx:id="btnEliminarIdioma" layoutX="315.0" layoutY="175.0" mnemonicParsing="false" onAction="#eliminarIdioma" text="ELIMINAR IDIOMA">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+        <Label fx:id="idiomasDisponibles" layoutX="24.0" layoutY="230.0" text="Idiomas disponibles:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <ComboBox fx:id="comboIdiomasDisponibles" layoutX="150.0" layoutY="225.0" prefHeight="25.0" prefWidth="139.0" />
+        <Button fx:id="btnAgregarIdioma" layoutX="315.0" layoutY="225.0" mnemonicParsing="false" onAction="#agregarIdioma" text="AGREGAR IDIOMA">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+        <Button fx:id="btnActualizarGuia" layoutX="320.0" layoutY="283.0" mnemonicParsing="false" onAction="#actualizarGuia" text="ACTUALIZAR GUÍA">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnBuscar" layoutX="315.0" layoutY="75.0" mnemonicParsing="false" onAction="#setGuiaTuristico" prefHeight="25.0" prefWidth="127.0" text="BUSCAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnEliminar" layoutX="172.0" layoutY="283.0" mnemonicParsing="false" onAction="#eliminarGuiaTuristico" prefHeight="25.0" prefWidth="127.0" text="ELIMINAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnAtras" layoutX="22.0" layoutY="283.0" mnemonicParsing="false" onAction="#regresarInicio" prefHeight="25.0" prefWidth="128.0" text="ATRÁS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

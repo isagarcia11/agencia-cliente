@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="390.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.ConocerDestinoControlador">
+
+    <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" layoutX="285.0" layoutY="101.0" />
+
+    <TextField fx:id="txtNombreDestino" editable="false" layoutX="35.0" layoutY="121.0" prefHeight="25.0" prefWidth="230.0" promptText="Nombre del destino" />
+    <TextField fx:id="txtCiudad" editable="false" layoutX="35.0" layoutY="163.0" prefHeight="25.0" prefWidth="230.0" promptText="Ciudad del destino" />
+    <TextField fx:id="txtDescripcion" editable="false" layoutX="35.0" layoutY="201.0" prefHeight="25.0" prefWidth="230.0" promptText="Descripción del destino" />
+    <TextField fx:id="txtClima" editable="false" layoutX="35.0" layoutY="243.0" prefHeight="25.0" prefWidth="230.0" promptText="Clima del destino" />
+
+    <Button fx:id="btnAnterior" layoutX="297.0" layoutY="320.0" onAction="#navegarAnterior" text="Anterior">
+      <font>
+         <Font name="Franklin Gothic Medium" size="15.0" />
+      </font></Button>
+    <Button fx:id="btnSiguiente" layoutX="394.0" layoutY="320.0" onAction="#navegarSiguiente" text="Siguiente">
+      <font>
+         <Font name="Franklin Gothic Medium" size="15.0" />
+      </font></Button>
+   <Button fx:id="btnAtras" layoutX="35.0" layoutY="322.0" mnemonicParsing="false" onAction="#atras" text="Atrás">
+      <font>
+         <Font name="Franklin Gothic Medium" size="15.0" />
+      </font>
+   </Button>
+
+</AnchorPane>

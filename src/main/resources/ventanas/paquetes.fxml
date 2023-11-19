@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.PaquetesControlador">
+    <children>
+        <TableView fx:id="tablaPaquetes" layoutX="14.0" layoutY="52.0" prefHeight="390.0" prefWidth="970.0">
+            <columns>
+                <TableColumn fx:id="columnNombre" prefWidth="116.0" text="Nombre" />
+                <TableColumn fx:id="columnDestinos" prefWidth="167.0" text="Destinos" />
+                <TableColumn fx:id="columnDuracion" prefWidth="124.0" text="Duración" />
+                <TableColumn fx:id="columnServiciosAdicionales" prefWidth="130.0" text="Serv. Adicionales" />
+                <TableColumn fx:id="columnPrecio" prefWidth="101.0" text="Precio" />
+                <TableColumn fx:id="columnCupoMaximo" prefWidth="102.0" text="Cupo Máximo" />
+                <TableColumn fx:id="columnFechaInicio" prefWidth="114.0" text="Fecha Inicio" />
+                <TableColumn fx:id="columnFechaFin" prefWidth="115.0" text="Fecha Fin" />
+            </columns>
+        </TableView>
+      <Button fx:id="btnAtras" layoutX="470.0" layoutY="453.0" mnemonicParsing="false" onAction="#regresarInicio" text="ATRÁS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="432.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.RegistrarClienteControlador">
+   <children>
+      <ImageView fitHeight="184.0" fitWidth="308.0" layoutX="74.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/registrate.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="-4.0" layoutY="131.0" prefHeight="3.0" prefWidth="463.0" />
+      <TextField fx:id="txtNombre" layoutX="91.0" layoutY="158.0" prefHeight="25.0" prefWidth="273.0" promptText="Nombre completo" />
+      <TextField fx:id="txtIdentificacion" layoutX="91.0" layoutY="203.0" prefHeight="25.0" prefWidth="273.0" promptText="Identificación" />
+      <TextField fx:id="txtCorreo" layoutX="91.0" layoutY="246.0" prefHeight="25.0" prefWidth="273.0" promptText="Correo electrónico" />
+      <TextField fx:id="txtDireccion" layoutX="91.0" layoutY="288.0" prefHeight="25.0" prefWidth="273.0" promptText="Dirección" />
+      <TextField fx:id="txtTelefono" layoutX="91.0" layoutY="333.0" prefHeight="25.0" prefWidth="273.0" promptText="Teléfono" />
+      <Button fx:id="btnGuardar" layoutX="245.0" layoutY="382.0" mnemonicParsing="false" onAction="#registrarCliente" text="GUARDAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRegresar" layoutX="132.0" layoutY="382.0" mnemonicParsing="false" onAction="#regresarLogin" text="REGRESAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.CrearDestinoControlador">
+   <children>
+      <TextField fx:id="txtNombreDestino" layoutX="78.0" layoutY="155.0" prefHeight="25.0" prefWidth="269.0" promptText="Nombre del destino" />
+      <TextField fx:id="txtCiudad" layoutX="78.0" layoutY="201.0" prefHeight="25.0" prefWidth="269.0" promptText="Ciudad" />
+      <TextField fx:id="txtDescripcion" layoutX="78.0" layoutY="243.0" prefHeight="25.0" prefWidth="269.0" promptText="Descripción" />
+      <TextField fx:id="txtImagen" layoutX="78.0" layoutY="286.0" prefHeight="25.0" prefWidth="269.0" promptText="Imagen" />
+      <ComboBox fx:id="cbxClima" layoutX="78.0" layoutY="324.0" prefHeight="25.0" prefWidth="269.0" />
+      <Button fx:id="btnGuardar" layoutX="222.0" layoutY="377.0" mnemonicParsing="false" onAction="#registrarDestino" text="GUARDAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnAtras" layoutX="131.0" layoutY="377.0" mnemonicParsing="false" onAction="#regresarInicio" prefHeight="25.0" prefWidth="81.0" text="ATRÁS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="181.0" fitWidth="302.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/CREARDESTINO.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="-14.0" layoutY="115.0" prefHeight="0.0" prefWidth="442.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.InicioClienteControlador">
+   <children>
+      <Button fx:id="btnModificarDatos" layoutX="140.0" layoutY="270.0" mnemonicParsing="false" onAction="#modificarDatos" prefHeight="28.0" prefWidth="150.0" text="MODIFICAR DATOS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnPaquetes" layoutX="145.0" layoutY="141.0" mnemonicParsing="false" onAction="#irAPaquetes" prefHeight="28.0" prefWidth="150.0" text="PAQUETES">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSalir" layoutX="184.0" layoutY="312.0" mnemonicParsing="false" onAction="#volverLogin" text="SALIR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRealizarReserva" layoutX="145.0" layoutY="186.0" mnemonicParsing="false" onAction="#irARealizarReserva" text="REALIZAR RESERVA">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMisReservas" layoutX="143.0" layoutY="228.0" mnemonicParsing="false" onAction="#irAMisReservas" prefHeight="28.0" prefWidth="150.0" text="MIS RESERVAS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="131.0" fitWidth="326.0" layoutX="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/INICIOADMIN.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="-5.0" layoutY="115.0" prefHeight="5.0" prefWidth="437.0" />
+   </children>
+</AnchorPane>

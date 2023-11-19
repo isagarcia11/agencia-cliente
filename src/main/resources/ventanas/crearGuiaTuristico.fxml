@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="289.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.CrearGuiaTuristicoControlador">
+    <children>
+        <Label fx:id="nombre" layoutX="18.0" layoutY="35.0" text="Nombre:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <TextField fx:id="txtNombre" layoutX="150.0" layoutY="30.0" />
+        <Label fx:id="identificacion" layoutX="18.0" layoutY="85.0" text="Identificación:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <TextField fx:id="txtIdentificacion" layoutX="150.0" layoutY="80.0" />
+        <Label fx:id="experiencia" layoutX="18.0" layoutY="135.0" text="Experiencia:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <TextField fx:id="txtExperiencia" layoutX="150.0" layoutY="130.0" />
+        <Label fx:id="idioma" layoutX="18.0" layoutY="185.0" text="Idioma:">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Label>
+        <ComboBox fx:id="comboIdiomas" layoutX="150.0" layoutY="180.0" prefHeight="25.0" prefWidth="149.0" />
+        <Button fx:id="btnAsignarIdioma" layoutX="320.0" layoutY="180.0" onAction="#asignarIdioma" text="ASIGNAR IDIOMA">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+        <Button fx:id="btnGuardar" layoutX="230.0" layoutY="242.0" onAction="#registrarGuiaTuristico" prefHeight="25.0" prefWidth="87.0" text="GUARDAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+        <Button fx:id="btnRegresar" layoutX="129.0" layoutY="242.0" onAction="#regresarInicio" text="REGRESAR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="14.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

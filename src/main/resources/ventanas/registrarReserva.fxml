@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.RegistrarReservaControlador">
+    <children>
+        <Label layoutX="46.0" layoutY="55.0" text="Seleccionar Paquete Turístico" />
+        <ComboBox fx:id="comboPaquetes" layoutX="251.0" layoutY="51.0" prefWidth="200.0" />
+        <Label layoutX="46.0" layoutY="105.0" text="Cantidad de Personas" />
+        <TextField fx:id="txtCantidadPersonas" layoutX="251.0" layoutY="101.0" prefWidth="200.0" />
+        <Label layoutX="46.0" layoutY="159.0" text="Fecha de Viaje" />
+        <DatePicker fx:id="dateFechaViaje" layoutX="251.0" layoutY="155.0" prefWidth="200.0" />
+        <Label layoutX="46.0" layoutY="210.0" text="Seleccionar Guía Turístico" />
+        <ComboBox fx:id="comboGuias" layoutX="251.0" layoutY="206.0" prefWidth="200.0" />
+        <Button fx:id="btnRegistrar" layoutX="251.0" layoutY="267.0" mnemonicParsing="false" onAction="#registrarReserva" text="Registrar" />
+        <Button fx:id="btnRegresar" layoutX="170.0" layoutY="267.0" mnemonicParsing="false" onAction="#regresarInicio" text="Regresar" />
+    </children>
+</AnchorPane>

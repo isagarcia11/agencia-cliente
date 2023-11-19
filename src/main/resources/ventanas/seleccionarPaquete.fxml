@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="441.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.SeleccionarPaqueteControlador">
+    <children>
+        <TextField fx:id="filtroNombre" layoutX="65.0" layoutY="53.0" onKeyReleased="#filtrar" prefHeight="25.0" prefWidth="100.0" promptText="Nombre" />
+        <TextField fx:id="filtroDestino" layoutX="187.0" layoutY="53.0" onKeyReleased="#filtrar" prefHeight="25.0" prefWidth="137.0" promptText="Destino" />
+        <TextField fx:id="filtroDuracion" layoutX="339.0" layoutY="53.0" onKeyReleased="#filtrar" prefHeight="25.0" prefWidth="124.0" promptText="Duración " />
+        <TextField fx:id="filtroServiciosAdicionales" layoutX="473.0" layoutY="53.0" onKeyReleased="#filtrar" prefHeight="25.0" prefWidth="116.0" promptText="Servicios " />
+        <TextField fx:id="filtroPrecio" layoutX="611.0" layoutY="53.0" onKeyReleased="#filtrar" prefHeight="25.0" prefWidth="86.0" promptText="Precio" />
+        <TextField fx:id="filtroCupoMaximo" layoutX="715.0" layoutY="53.0" onKeyReleased="#filtrar" prefHeight="25.0" prefWidth="86.0" promptText="Cupo máximo" />
+        <TextField fx:id="filtroFechaInicio" layoutX="815.0" layoutY="53.0" onKeyReleased="#filtrar" prefHeight="25.0" prefWidth="93.0" promptText="Fecha de inicio" />
+        <TextField fx:id="filtroFechaFin" layoutX="921.0" layoutY="53.0" onKeyReleased="#filtrar" prefHeight="25.0" prefWidth="86.0" promptText="Fecha de fin" />
+
+        <TableView fx:id="tablaPaquetes" layoutX="65.0" layoutY="89.0" prefHeight="282.0" prefWidth="955.0">
+            <columns>
+                <TableColumn fx:id="columnNombre" prefWidth="116.0" text="Nombre" />
+                <TableColumn fx:id="columnDestinos" prefWidth="149.3333282470703" text="Destinos" />
+                <TableColumn fx:id="columnDuracion" prefWidth="142.00003051757812" text="Duración" />
+                <TableColumn fx:id="columnServiciosAdicionales" prefWidth="125.00006103515625" text="Serv. Adicionales" />
+                <TableColumn fx:id="columnPrecio" prefWidth="106.333251953125" text="Precio" />
+                <TableColumn fx:id="columnCupoMaximo" prefWidth="102.0" text="Cupo Máximo" />
+                <TableColumn fx:id="columnFechaInicio" prefWidth="109.333251953125" text="Fecha Inicio" />
+                <TableColumn fx:id="columnFechaFin" prefWidth="120.66668701171875" text="Fecha Fin" />
+            </columns>
+        </TableView>
+      <Button fx:id="btnDetallesPaquete" layoutX="374.0" layoutY="386.0" mnemonicParsing="false" onAction="#mostrarDetalle" text="DETALLES DEL PAQUETE">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="43.0" fitWidth="86.0" layoutX="-7.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/FILTRO.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="575.0" layoutY="386.0" mnemonicParsing="false" onAction="#actualizarBusquedasDestinos" text="GUARDAR BUSQUEDA">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font></Button>
+      <Button layoutX="758.0" layoutY="385.0" mnemonicParsing="false" onAction="#actualizarTabla" text="SUGERENCIAS">
+         <font>
+             <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="btnAtras" layoutX="227.0" layoutY="386.0" mnemonicParsing="false" onAction="#atras" prefHeight="28.0" prefWidth="124.0" text="ATRÁS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+
+    </children>
+</AnchorPane>

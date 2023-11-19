@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="386.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controladores.LoginControlador">
+   <ImageView fitHeight="213.0" fitWidth="193.0" layoutX="169.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../imagenes/logoAgencia.png" />
+   </ImageView>
+   <Separator layoutX="-3.0" layoutY="171.0" prefHeight="0.0" prefWidth="503.0" />
+   <TextField fx:id="usuarioCliente" layoutX="139.0" layoutY="199.0" prefHeight="25.0" prefWidth="219.0" promptText="Ingresa tu usuario" />
+   <PasswordField fx:id="contrasenaCliente" layoutX="139.0" layoutY="245.0" prefHeight="25.0" prefWidth="219.0" promptText="Ingresa tu contraseña" />
+   <Label fx:id="banner2" layoutX="139.0" layoutY="277.0" text="Si no tienes cuenta, da click en el botón registrarse">
+      <font>
+         <Font name="Franklin Gothic Medium" size="10.0" />
+      </font>
+   </Label>
+   <Button fx:id="btnIniciar" layoutX="134.0" layoutY="318.0" mnemonicParsing="false" onAction="#iniciarSesion" text="INICIAR SESIÓN">
+      <font>
+         <Font name="Franklin Gothic Medium" size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnRegistrarse" layoutX="261.0" layoutY="318.0" mnemonicParsing="false" onAction="#registrarUsuario" text="REGISTRARSE">
+      <font>
+         <Font name="Franklin Gothic Medium" size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnAtras" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#atras" text="ATRÁS">
+      <font>
+         <Font name="Franklin Gothic Medium" size="14.0" />
+      </font>
+   </Button>
+</AnchorPane>
